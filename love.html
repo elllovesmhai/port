@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTRAIT OF US</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: radial-gradient(circle, #ff7f7f, #ff69b4, #ffe4e1);
+            overflow: hidden;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            color: #ff1493;
+        }
+
+        .background-designs {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .background-designs div {
+            position: absolute;
+            animation: float 6s infinite ease-in-out;
+            opacity: 0.8;
+        }
+
+        .heart {
+            font-size: 60px;
+            color: #ff69b4;
+        }
+
+        .flower {
+            font-size: 60px;
+            color: #ff1493;
+        }
+
+        .sparkle {
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        .frame-container {
+            position: relative;
+            z-index: 1;
+            background: #ffffff;
+            border: 10px solid #ff69b4;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            text-align: center;
+            margin: auto;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .frame-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 5px solid #ff1493;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .caption {
+            margin-top: 15px;
+            color: #ff1493;
+            font-weight: bold;
+            font-size: 1.5em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #ffffff;
+            background: rgba(255, 20, 147, 0.8);
+            padding: 10px 15px;
+            border-radius: 10px;
+            display: inline-block;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-designs">
+        <!-- Add floating hearts -->
+        <div class="heart" style="top: 10%; left: 15%; animation-duration: 5s;">❤️</div>
+        <div class="heart" style="top: 25%; left: 75%; animation-duration: 6s;">💖</div>
+        <div class="heart" style="top: 50%; left: 40%; animation-duration: 7s;">💕</div>
+
+        <!-- Add floating flowers -->
+        <div class="flower" style="top: 70%; left: 20%; animation-duration: 8s;">🌸</div>
+        <div class="flower" style="top: 15%; left: 60%; animation-duration: 9s;">🌺</div>
+
+        <!-- Add sparkles -->
+        <div class="sparkle" style="top: 30%; left: 10%; animation-duration: 5s;">✨</div>
+        <div class="sparkle" style="top: 80%; left: 50%; animation-duration: 7s;">✨</div>
+        <div class="sparkle" style="top: 60%; left: 80%; animation-duration: 6s;">✨</div>
+    </div>
+
+    <div class="frame-container">
+        <img src="/image/462578851_2338955113127991_1079192761855265373_n.jpg" alt="Our Moment">
+        <div class="caption">I LOVE YOU FOREVER, I PROMISE💕</div>
+        <div class="message">"Life Has Always been hard but, it became easier when you came baby i love you so much. Thank you bebe ko:>"</div>
+    </div>
+</body>
+</html>
